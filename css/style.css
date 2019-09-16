@@ -90,7 +90,7 @@ body {
     color: #333;
     margin: 2rem 0 1rem; }
   .introduce__paragraph {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     color: #858585;
     margin-bottom: 1rem;
     line-height: 2.2rem; }
@@ -164,6 +164,7 @@ body {
   text-align: center;
   position: relative; }
   .motivation__text {
+    background: rgba(0, 0, 0, 0.5);
     margin: 0 6.9rem;
     position: absolute;
     top: 50%;
@@ -242,6 +243,8 @@ body {
     background: #777;
     position: relative;
     border: 1px solid #585858; }
+  .portfolio figure {
+    cursor: pointer; }
   .portfolio figcaption {
     position: absolute;
     top: 50%;

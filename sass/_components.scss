@@ -78,7 +78,7 @@
     }
 
     &__paragraph {
-        font-size: 1.4rem;
+        font-size: 1.6rem;
         color: $grey-light1;
         margin-bottom: 1rem;
         line-height: 2.2rem;
@@ -182,6 +182,7 @@
     position: relative;
 
     &__text {
+        background: rgba($color-black, .5);
         margin: 0 $big-gutter;
         position: absolute;
         top: 50%;
@@ -300,6 +301,10 @@
         background: $grey-dark2; 
         position: relative;
         border: 1px solid $grey-light5;
+    }
+
+    figure {
+        cursor: pointer;
     }
 
     figcaption {
