@@ -1,0 +1,71 @@
+.navbar { 
+    background: $primary-color;
+    font-size: 1.7rem;
+    padding: 0 8.5rem;
+    border-bottom: 1px solid $pink-darker-color;
+    text-transform: uppercase;
+
+    @media (max-width: 768px) {
+        padding: 0 3rem;
+    }
+
+    @media (max-width: 576px) {
+        padding: 0 1.5rem;
+    }
+
+    @media (max-width: 500px) {
+        justify-content: flex-end;
+    }
+
+}
+
+.navbar-brand {
+    color: $white-color;
+    font-size: 3rem;
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+
+    @media (max-width: 500px) {
+        display: none;
+    }
+}
+
+.nav-link:link, .nav-link:visited { color: $pink-light-color; cursor: pointer;}
+.nav-link:hover{ color: $white-color}
+.navbar-collapse{ justify-content: flex-end;}
+.navbar-toggler{  
+    border-color: $primary-color;
+    background: $primary-color;
+    padding: 9px 10px;
+    border: 1px solid transparent;
+    outline: none !important;
+}
+
+.icon-bar {
+    background: $white-color;
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+
+    &:not(:last-of-type) {
+        margin-bottom: 4px;
+    }
+}
+
+.navbar-nav {
+    @media (max-width: 991px) {
+        border-top: 1px solid $grey-dark3;
+        padding-top: 2rem;
+    }
+    
+    & li:not(:last-child) {
+        padding-right: 2rem;
+    }
+}
+
+.active {
+    color: $white-color !important;
+}
