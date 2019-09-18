@@ -37,7 +37,7 @@ body {
   color: #fff;
   background: #CC4646; }
 
-.home-btn {
+.home__btn {
   padding: 1rem 1rem;
   background: #cc4646;
   position: fixed;
@@ -46,7 +46,7 @@ body {
   z-index: 100;
   border: 0;
   outline: none; }
-  .home-btn svg {
+  .home__btn svg {
     fill: #fff;
     height: 1.5rem;
     width: 1.5rem; }

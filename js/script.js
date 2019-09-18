@@ -11,10 +11,13 @@ $(document).ready(function() {
         $(".aboutMe__description, .aboutMe__head").height(min_height);
     }; */
 
+
+    // Скрытие мобильной навигации по клику на ссылку
     $('.navbar-collapse a').click(function(){
         $(".navbar-collapse").collapse('hide');
     });
 
+     // Добавление/удаление класса в навигации
     $('.navbar a').click(function() {
         $('.navbar a.active').removeClass('active');
         var $this = $(this);
@@ -23,12 +26,34 @@ $(document).ready(function() {
         }
     });
 
-    $('.home-btn').click(function(e) {
+    // Добавление/удаление класса в навигации по нажатию кнопки
+    $('.home').click(function(e) {
        $('.navbar a').removeClass('active');
        $('.navbar a[href="#banner"]').addClass('active');
     });
 
+    // Анимируем плавный переход к якорным ссылкам
+    $(function(){
+        $('a[href^="#"]').on('click', function(event) {
+            // отменяем стандартное действие
+            event.preventDefault();
+            
+            var sc = $(this).attr("href"),
+                dn = $(sc).offset().top;
+            /*
+            * sc - в переменную заносим информацию о том, к какому блоку надо перейти
+            * dn - определяем положение блока на странице
+            */
+            
+            $('html, body').animate({scrollTop: dn}, 1000);
+            
+            /*
+            * 1000 скорость перехода в миллисекундах
+            */
+        });
+    });
 
+    // Добавление/удаление класса в ссылки навмгации по скроллу
     $(window).scroll(function(){
         var sections = $('section');
         sections.each(function(i,el){
@@ -36,26 +61,10 @@ $(document).ready(function() {
             var bottom = top +$(el).height();
             var scroll = $(window).scrollTop();
             var id = $(el).attr('id');
-        if(scroll > top && scroll < bottom) {
-            $('a.active').removeClass('active');
-            $('a[href="#'+id+'"]').addClass('active');
-        
+            if(scroll > top && scroll < bottom) {
+                $('a.active').removeClass('active');
+                $('a[href="#'+id+'"]').addClass('active');   
             }
         });
     });
-    
-    $(".navbar").on("click","a", function (event) {
-       // исключаем стандартную реакцию браузера
-       event.preventDefault();
-    
-       // получем идентификатор блока из атрибута href
-       var id  = $(this).attr('href'),
-    
-       // находим высоту, на которой расположен блок
-        top = $(id).offset().top;
-        
-       // анимируем переход к блоку, время: 800 мс
-       $('body,html').animate({scrollTop: top}, 800);
-    });
-
 }) // end ready
