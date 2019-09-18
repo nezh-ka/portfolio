@@ -38,16 +38,16 @@
         <div class="collapse navbar-collapse " id="navbarSupportedContent">     
             <ul class="navbar-nav mr-4"> 
                 <li class="nav-item">
-                    <a class="nav-link active" data-value="portfolio" href="#banner">Главная</a>    
+                    <a class="nav-link active" data-value="banner" href="#banner">Главная</a>    
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" data-value="portfolio"href="#about">Обо мне</a>    
+                    <a class="nav-link" data-value="about"href="#about">Обо мне</a>    
                 </li>
                 <li class="nav-item"> 
-                    <a class="nav-link" data-value="blog" href="#skills">Навыки</a>
+                    <a class="nav-link" data-value="skills" href="#skills">Навыки</a>
                 </li>   
                 <li class="nav-item">  
-                    <a class="nav-link" data-value="team" href="#portfolio">Портфолио</a>
+                    <a class="nav-link" data-value="portfolio" href="#portfolio">Портфолио</a>
                 </li>  
                 <li class="nav-item"> 
                     <a class="nav-link" data-value="contact" href="#contacts">Контакты</a>
@@ -61,79 +61,81 @@
             <p class="banner__paragraph">Разрабатываю веб-сайты</p>
         </div>
     </section>
-    <section class="introduce" id="about">
-        <div class="introduce__text-container">
-            <h1 class="introduce__heading">
-                Я создаю красивые и адаптивные веб-сайты
-            </h1>
-            <p class="introduce__paragraph">
-                Пару лет назад, в далеком 2017 году я поняла, что хочу в жизни перемен. Я увидела в сети
-                рекламу-объявление о наборе на курс <a href="https://froncubator.com/" class="introduce__link">"Базовый frontend"</a>. Что это я, конечно, не знала,
-                но задумка мне понравилась, цена вполне устроила, свободного времени было достаточно. И закрутилось... 5 месяцев учебы,
-                интересных домашних заданий. Боль, ненависть и любовь одновременно. Преподаватель вдохновил,
-                профессия понравилась. С тех пор я стараюсь практиковать свои навыки и развиваться. Постоянно 
-                поднимаю скилы с помощью курсов на <a href="https://www.udemy.com/" class="introduce__link">udemy.com</a>. Из последних курсов:
-                "Git: Полный курс для начинающий и не только", "The Complete JavaScript Course 2019: Build Real Projects!",
-                "Advanced CSS and Sass: Flexbox, Grid, Animations and More!", "Bootstrap4: первые шаги".
-                И останавливаться я не собираюсь. Хочу развиваться и заниматься этим профессионально.
-            </p>
+    <section id="about">
+        <div class="introduce">
+            <div class="introduce__text-container">
+                <h1 class="introduce__heading">
+                    Я создаю красивые и адаптивные веб-сайты
+                </h1>
+                <p class="introduce__paragraph">
+                    Пару лет назад, в далеком 2017 году я поняла, что хочу в жизни перемен. Я увидела в сети
+                    рекламу-объявление о наборе на курс <a href="https://froncubator.com/" class="introduce__link">"Базовый frontend"</a>. Что это я, конечно, не знала,
+                    но задумка мне понравилась, цена вполне устроила, свободного времени было достаточно. И закрутилось... 5 месяцев учебы,
+                    интересных домашних заданий. Боль, ненависть и любовь одновременно. Преподаватель вдохновил,
+                    профессия понравилась. С тех пор я стараюсь практиковать свои навыки и развиваться. Постоянно 
+                    поднимаю скилы с помощью курсов на <a href="https://www.udemy.com/" class="introduce__link">udemy.com</a>. Из последних курсов:
+                    "Git: Полный курс для начинающий и не только", "The Complete JavaScript Course 2019: Build Real Projects!",
+                    "Advanced CSS and Sass: Flexbox, Grid, Animations and More!", "Bootstrap4: первые шаги".
+                    И останавливаться я не собираюсь. Хочу развиваться и заниматься этим профессионально.
+                </p>
+            </div>
         </div>
-    </section>
-    <section class="aboutMe">
-        <div class="aboutMe__text-container">
-            <h2 class="aboutMe__heading">
-                Я Елена, и я начинающий Frontend-разработчик
-            </h2>
-            <p class="aboutMe__paragraph">
-                О своих инструментах и областях, в которых я хочу развиваться
-            </p>
-            <div class="row aboutMe__wrap">
-                <div class="col-lg-4 col-md-6 col-sm-12 aboutMe__text-box">
-                    <div class="aboutMe__head">
-                        <svg class="aboutMe__icon">
-                            <use xlink:href="#desktop-monitor"></use>
-                        </svg>
-                        <h3 class="aboutMe__heading-tertiary">Адаптивный дизайн</h3>
+        <div class="aboutMe">
+            <div class="aboutMe__text-container">
+                <h2 class="aboutMe__heading">
+                    Я Елена, и я начинающий Frontend-разработчик
+                </h2>
+                <p class="aboutMe__paragraph">
+                    О своих инструментах и областях, в которых я хочу развиваться
+                </p>
+                <div class="row aboutMe__wrap">
+                    <div class="col-lg-4 col-md-6 col-sm-12 aboutMe__text-box">
+                        <div class="aboutMe__head">
+                            <svg class="aboutMe__icon">
+                                <use xlink:href="#desktop-monitor"></use>
+                            </svg>
+                            <h3 class="aboutMe__heading-tertiary">Адаптивный дизайн</h3>
+                        </div>
+                        <div class="aboutMe__description-wrap">
+                            <p class="aboutMe__description">
+                                Использую Flexbox, Grid, Bootstrap. Приложение должно быть удобным и красивым на всех устройствах.
+                            </p>
+                        </div>
                     </div>
-                    <div class="aboutMe__description-wrap">
+    
+                    <div class="col-lg-4 col-md-6 col-sm-12 aboutMe__text-box">
+                        <div class="aboutMe__head">
+                            <svg class="aboutMe__icon">
+                                <use xlink:href="#css-3-logo"></use>
+                            </svg>
+                            <h3 class="aboutMe__heading-tertiary">HTML5/CSS3</h3>
+                        </div>
                         <p class="aboutMe__description">
-                            Использую Flexbox, Grid, Bootstrap. Приложение должно быть удобным и красивым на всех устройствах.
+                            Так мало узнано и так много непознано. HTML5 и CSS3 дали разработчикам море новых инструментов (тэгов, свойств, изумительную анимацию). Моего багажа достаточно, чтобы создать красоту, реализовать необходимый функционал. Но нового мало не бывает,  и мне хочется узнать больше об этих волшебных инструментах.
+                        </p>
+                    </div>
+    
+                    <div class="col-lg-4 col-md-12 col-sm-12 aboutMe__text-box">
+                        <div class="aboutMe__head">
+                            <svg class="aboutMe__icon">
+                                <use xlink:href="#light-bulb"></use>
+                            </svg>
+                            <h3 class="aboutMe__heading-tertiary">JavaScript</h3>
+                        </div>
+                        <p class="aboutMe__description">
+                            JavaScript - невероятно комфортный язык для таких, как я, новичков. Он может очень многое. Поэтому я хочу узнавать все больше его библиотек и фреймворков. На своих страничках я использую jQuery. Сейчас учу React и начинаю изучать обширный курс по NodeJS.
                         </p>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 col-sm-12 aboutMe__text-box">
-                    <div class="aboutMe__head">
-                        <svg class="aboutMe__icon">
-                            <use xlink:href="#css-3-logo"></use>
-                        </svg>
-                        <h3 class="aboutMe__heading-tertiary">HTML5/CSS3</h3>
-                    </div>
-                    <p class="aboutMe__description">
-                        Так мало узнано и так много непознано. HTML5 и CSS3 дали разработчикам море новых инструментов (тэгов, свойств, изумительную анимацию). Моего багажа достаточно, чтобы создать красоту, реализовать необходимый функционал. Но нового мало не бывает,  и мне хочется узнать больше об этих волшебных инструментах.
-                    </p>
-                </div>
-
-                <div class="col-lg-4 col-md-12 col-sm-12 aboutMe__text-box">
-                    <div class="aboutMe__head">
-                        <svg class="aboutMe__icon">
-                            <use xlink:href="#light-bulb"></use>
-                        </svg>
-                        <h3 class="aboutMe__heading-tertiary">JavaScript</h3>
-                    </div>
-                    <p class="aboutMe__description">
-                        JavaScript - невероятно комфортный язык для таких, как я, новичков. Он может очень многое. Поэтому я хочу узнавать все больше его библиотек и фреймворков. На своих страничках я использую jQuery. Сейчас учу React и начинаю изучать обширный курс по NodeJS.
-                    </p>
-                </div>
             </div>
+            
         </div>
-        
-    </section>
-
-    <section class="motivation">
-        <div class="motivation__text">
-            <h2 class="motivation__heading-secondary">Если вы хотите что-либо услышать, спросите мужчину. Если вы хотите что-либо сделать, попросите женщину</h2>
-            <h3 class="motivation__heading-tertiary">Маргарет Тэтчер</h3>
+    
+        <div class="motivation">
+            <div class="motivation__text">
+                <h2 class="motivation__heading-secondary">Если вы хотите что-либо услышать, спросите мужчину. Если вы хотите что-либо сделать, попросите женщину</h2>
+                <h3 class="motivation__heading-tertiary">Маргарет Тэтчер</h3>
+            </div>
         </div>
     </section>
     <section class="skills" id="skills">

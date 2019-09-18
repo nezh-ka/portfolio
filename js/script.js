@@ -53,7 +53,7 @@ $(document).ready(function() {
         });
     });
 
-    // Добавление/удаление класса в ссылки навмгации по скроллу
+    // Добавление/удаление класса в ссылки навигации по скроллу
     $(window).scroll(function(){
         var sections = $('section');
         sections.each(function(i,el){
