@@ -3,17 +3,6 @@ $(document).ready(function() {
     $(function() {
         $('.aboutMe__description').matchHeight();
     });
-  /*   if($('body').width() > 576) {
-        var min_height = 0;
-        $(".aboutMe__description, .aboutMe__head").each(function () {
-            var block_height = $(this).height();
-            if(block_height > min_height) {
-            min_height = block_height;
-            };
-        });
-        $(".aboutMe__description, .aboutMe__head").height(min_height);
-    }; */
-
 
     // Скрытие мобильной навигации по клику на ссылку
     $('.navbar-collapse a').click(function(){
