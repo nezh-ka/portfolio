@@ -1,5 +1,8 @@
 $(document).ready(function() {
     // Устанавливаю одинаковую высоту блоков
+    $(function() {
+        $('.aboutMe__description').matchHeight();
+    });
   /*   if($('body').width() > 576) {
         var min_height = 0;
         $(".aboutMe__description, .aboutMe__head").each(function () {

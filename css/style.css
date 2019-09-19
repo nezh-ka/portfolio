@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes moveInRight {
   0% {
     opacity: 0;
@@ -104,6 +105,10 @@ body {
 .aboutMe {
   background: #e4e4e4;
   padding: 6rem 6.9rem; }
+  .aboutMe__wrap {
+    flex-direction: row;
+    /*Пункты внутри контейнера будут располагаться горизонтально*/
+    align-items: stretch; }
   .aboutMe__text-container {
     margin: 0 1.5rem 3rem 1.5rem;
     padding: .3rem 0 1.5rem;
@@ -134,9 +139,6 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 2.4rem; }
-  .aboutMe__text-box {
-    display: flex;
-    flex-direction: column; }
   .aboutMe__description {
     background: #f0f0f0;
     padding: 2rem;
