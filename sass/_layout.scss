@@ -1,3 +1,20 @@
+.home__btn {
+    padding: 1rem 1rem;
+    background: $primary-color;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 100;
+    border: 0;
+    outline: none;
+
+    svg {
+        fill: $white-color;
+        height: 1.5rem;
+        width: 1.5rem;
+        
+    }
+}
 .navbar { 
     background: $primary-color;
     font-size: 1.7rem;
@@ -68,4 +85,38 @@
 
 .active {
     color: $white-color !important;
+}
+
+
+
+.footer {
+    background: $grey-light7;
+    color: $grey-dark5;
+    text-align: center;
+    padding: 1.5rem  0;
+
+    &__text {
+        color: $grey-dark5;
+        font-size: 1.4rem;
+        margin: 0 $big-gutter;
+        padding: 0 1.5rem;
+    }
+
+    a:link,
+    a:visited {
+        text-decoration: none;
+        color: $primary-color;
+    }
+
+    @media (max-width: 768px) {
+        &__text {
+            margin: 0 $medium-gutter;
+        }
+    }
+
+    @media (max-width: 576px) {
+        &__text {
+            margin: 0 $small-gutter;
+        }
+    }
 }

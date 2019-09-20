@@ -59,4 +59,9 @@ $(document).ready(function() {
             }
         });
     });
+
+    // Оповещение после отправки формы
+    $('.contacts .btn').click(function() {
+        $('.contacts__message').slideDown();
+    }); // end click
 }) // end ready
