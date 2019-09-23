@@ -187,6 +187,11 @@ body {
     .contacts .form-control::placeholder {
       font-size: 1.7rem;
       color: #a8a8a8; }
+  .contacts input.error, .contacts textarea.error {
+    border: 1px solid #cc4646; }
+  .contacts label.error {
+    color: #cc4646;
+    font-size: 1.7rem; }
   .contacts .btn, .contacts .btn:active {
     float: right !important;
     font-size: 1.4rem;

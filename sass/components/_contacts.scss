@@ -40,6 +40,15 @@
         }
     }
 
+    input.error, textarea.error {
+        border: 1px solid $primary-color;
+    }
+
+    label.error {
+        color: $primary-color;
+        font-size: 1.7rem;
+    }
+
     .btn, .btn:active {
         float: right !important;
         font-size: 1.4rem;
