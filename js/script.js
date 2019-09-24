@@ -92,4 +92,26 @@ $(document).ready(function() {
         $('.contacts__message').slideDown();
     }); // end click
 
+    // Анимация для портфолио
+    $(window).scroll(function() {
+
+        var blockHeight, windowHeight;
+    
+        blockHeight = $('.portfolio').offset().top - 200;
+    
+        windowHeight = $(document).scrollTop();
+    
+        if (windowHeight >= blockHeight) {
+
+            $('.portfolio figure').animate({
+                'opacity': 1
+            }, 1500);
+    
+            console.log("@@@");
+            
+            $(window).off('scroll');
+        }
+    
+    });
+
 }) // end ready
