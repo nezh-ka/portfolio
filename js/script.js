@@ -66,17 +66,7 @@ $(document).ready(function() {
         $('.contacts__message').slideDown();
     }); // end click
 
-    // Анимация для портфолио
-    // $(window).scroll(function() {
-    //     $('.portfolio figure').each(function(){
-    //         var imagePos = $(this).offset().top;
-    //         var topOfWindow = $(window).scrollTop();
-    //         if (imagePos < topOfWindow+200) {
-    //         $(this).addClass('zoomIn');
-    //         }
-    //     });
-    // });
-
+    // Анимация для портфолио и текст-боксов
     $('figure')
     .waypoint( function(dir) {
         if ( dir === 'down' )
@@ -104,4 +94,14 @@ $(document).ready(function() {
         offset: -50
     })
 
-}) // end ready
+       $(window).scroll(function() {
+        $('.aboutMe__text-box').each(function(){
+            var imagePos = $(this).offset().top;
+            var topOfWindow = $(window).scrollTop();
+            if (imagePos < topOfWindow+200) {
+            $(this).addClass('animated flipInY');
+            }
+        });
+    });
+
+}); // end ready
