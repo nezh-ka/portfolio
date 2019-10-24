@@ -67,7 +67,7 @@ $(document).ready(function() {
     }); // end click
 
     // Анимация для портфолио
-    $(window).scroll(function() {
+   /*  $(window).scroll(function() {
 
         var blockHeight, windowHeight;
     
@@ -85,5 +85,16 @@ $(document).ready(function() {
         }
     
     });
+ */
+
+$(window).scroll(function() {
+    $('.portfolio figure').each(function(){
+        var imagePos = $(this).offset().top;
+        var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+200) {
+          $(this).addClass('zoomIn');
+        }
+    });
+});
 
 }) // end ready

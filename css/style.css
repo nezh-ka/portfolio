@@ -31,8 +31,7 @@ body {
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #fff;
-  font-size: 5rem;
-  animation: moveInRight 1s ease-out; }
+  font-size: 5rem; }
 
 .introduce {
   padding: 5rem 0;
@@ -151,8 +150,7 @@ body {
     margin: 6rem 6.9rem; }
   .banner__paragraph {
     font-size: 2.3rem;
-    color: #fff;
-    animation: moveInRight 1.5s ease-out; }
+    color: #fff; }
   @media (max-width: 768px) {
     .banner__text {
       margin: 1.5rem 3rem; } }
@@ -252,8 +250,7 @@ body {
     position: relative;
     border: 1px solid #585858; }
   .portfolio figure {
-    cursor: pointer;
-    opacity: 0; }
+    cursor: pointer; }
   .portfolio figcaption {
     position: absolute;
     top: 50%;
@@ -323,16 +320,21 @@ body {
 .progress-bar {
   background-color: #cc4646; }
 
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem); }
-  80% {
-    transform: translateX(-1rem); }
-  100% {
-    opacity: 1;
-    transform: translate(0); } }
+/* @keyframes moveInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
 
+    80% {
+        transform: translateX(-1rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+} */
 .home__btn {
   padding: 1rem 1rem;
   background: #cc4646;
