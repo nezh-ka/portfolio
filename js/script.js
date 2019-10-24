@@ -67,34 +67,41 @@ $(document).ready(function() {
     }); // end click
 
     // Анимация для портфолио
-   /*  $(window).scroll(function() {
+    // $(window).scroll(function() {
+    //     $('.portfolio figure').each(function(){
+    //         var imagePos = $(this).offset().top;
+    //         var topOfWindow = $(window).scrollTop();
+    //         if (imagePos < topOfWindow+200) {
+    //         $(this).addClass('zoomIn');
+    //         }
+    //     });
+    // });
 
-        var blockHeight, windowHeight;
-    
-        blockHeight = $('.portfolio').offset().top - 200;
-    
-        windowHeight = $(document).scrollTop();
-    
-        if (windowHeight >= blockHeight) {
+    $('figure')
+    .waypoint( function(dir) {
+        if ( dir === 'down' )
+            $(this)
+            .removeClass('zoomOut')
+            .addClass('zoomIn');
+        else
+            $(this)
+            .removeClass('zoomIn')
+            .addClass('zoomOut');
+    }, {
+        offset: '80%'
+    })
 
-            $('.portfolio figure').animate({
-                'opacity': 1
-            }, 1500);
-            
-            $(window).off('scroll');
-        }
-    
-    });
- */
-
-$(window).scroll(function() {
-    $('.portfolio figure').each(function(){
-        var imagePos = $(this).offset().top;
-        var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+200) {
-          $(this).addClass('zoomIn');
-        }
-    });
-});
+    .waypoint( function(dir) {
+        if ( dir === 'down' )
+            $(this)
+            .removeClass('zoomIn')
+            .addClass('zoomOut');
+        else
+            $(this)
+            .removeClass('zoomOut')
+            .addClass('zoomIn');
+    }, {
+        offset: -50
+    })
 
 }) // end ready

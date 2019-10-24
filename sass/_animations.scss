@@ -13,3 +13,10 @@
         transform: translate(0);
     }
 } */
+
+.boxHidded{
+    visibility: hidden; /*  Делаем иконки полностью прозрачными  */
+}
+.zoomIn, .zoomOut{
+    visibility: visible;  /*  Делаем иконки полностью не прозрачными  */
+}
