@@ -24,7 +24,7 @@ $(document).ready(function() {
        $('.navbar a[href="#banner"]').addClass('active');
     });
 
-    // Анимируем плавный переход к якорным ссылкам
+    // Анимирую плавный переход к якорным ссылкам
     $(function(){
         $('a[href^="#"]').on('click', function(event) {
             // отменяем стандартное действие
@@ -80,8 +80,6 @@ $(document).ready(function() {
             $('.portfolio figure').animate({
                 'opacity': 1
             }, 1500);
-    
-            console.log("@@@");
             
             $(window).off('scroll');
         }
