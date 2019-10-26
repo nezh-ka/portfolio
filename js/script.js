@@ -94,14 +94,38 @@ $(document).ready(function() {
         offset: -50
     })
 
-       $(window).scroll(function() {
-        $('.aboutMe__text-box').each(function(){
-            var imagePos = $(this).offset().top;
-            var topOfWindow = $(window).scrollTop();
-            if (imagePos < topOfWindow+200) {
-            $(this).addClass('animated flipInY');
-            }
-        });
-    });
+    // $(window).scroll(function() {
+    //     $('.aboutMe__text-box').each(function(){
+    //         var imagePos = $(this).offset().top;
+    //         var topOfWindow = $(window).scrollTop();
+    //         if (imagePos < topOfWindow+200) {
+    //         $(this).addClass('animated flipInY');
+    //         }
+    //     });
+    // });
 
+
+    $('.aboutMe__text-box')
+    .waypoint( function(dir) {
+        if ( dir === 'down' )
+            $(this)
+            .addClass('animated flipInY');
+        else
+            $(this)
+            .removeClass('animated flipInY')
+    }, {
+        offset: '80%'
+    })
+
+    .waypoint( function(dir) {
+        if ( dir === 'down' )
+            $(this)
+            .removeClass('animated flipInY')
+        else
+            $(this)
+            .addClass('animated flipInY');
+    }, {
+        offset: -50
+    })
+    
 }); // end ready
