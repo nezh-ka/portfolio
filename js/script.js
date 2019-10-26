@@ -117,15 +117,4 @@ $(document).ready(function() {
         offset: '80%'
     })
 
-    .waypoint( function(dir) {
-        if ( dir === 'down' )
-            $(this)
-            .removeClass('animated flipInY')
-        else
-            $(this)
-            .addClass('animated flipInY');
-    }, {
-        offset: -50
-    })
-    
 }); // end ready
